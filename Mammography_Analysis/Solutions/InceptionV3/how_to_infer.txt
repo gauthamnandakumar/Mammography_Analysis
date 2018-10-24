@@ -1,0 +1,4 @@
+To execute the inception V3 model, run mammogram_inference.py file. 
+
+In the file the only line to be modified (as indcated in the code) is the data_path. 
+Change the path to your test data location. 

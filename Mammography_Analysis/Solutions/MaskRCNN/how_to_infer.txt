@@ -1,0 +1,8 @@
+To execute the MaskRCNN model, run the mammogram_inference.py file.
+Please do change the data_path at the beginning to your test data directory. 
+
+The MaskRCNN contains 2 weights - 
+	1. Weights trained on the coco dataset - Used for training
+	2. Weights trained on the Mammography dataset - Used for inference
+
+The weights for inference is under logs in the MaskRCNN folder. 

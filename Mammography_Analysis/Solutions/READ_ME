@@ -1,0 +1,13 @@
+I provide 2 solutions to analyze Mammograms. 
+The first approach is to use the Vgg16 network and do a image classifier. 
+But upon evaluating the results I observed that this model did not give good accuracy on the validation set. 
+I decided to take an alternative approach. I used MaskRCNN
+
+Advantages of MaskRCNN
+ 1. Localization
+ 2. Segmentation 
+ 3. classification
+
+Since the MaskRCNN architecture provides 2 more added features I believed the model to provide me a good solution. 
+And unlike the Vgg16 network , since the MaskRCNN uses Regional Proposal Network the chances of detecting the ABnormality is very high. 
+

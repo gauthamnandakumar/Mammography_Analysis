@@ -1,0 +1,21 @@
+Abnormality Detection and Classification using MaskRCNN
+
+MaskRCNN can be used to perform instance segmentation.
+For training the model it requires 3 inputs:
+	1. Image
+	2. Masks for each abnormality instance
+	3. Class associated to each Mask [B or M]
+
+The Masks for the training were obtained from the x,y co-ordinates 
+and the radius info provided with the dataset. 
+I build square boxes and constructed the mask. 
+
+The dataset was divided as 98 images for training and 14 images for validation
+
+The detection confidence was at 0.5
+
+Please do look at the Jupyter Notebook attached to better understand the architecture and the results. 
+
+The average IOU on the validation set is 0.64
+The training Loss is at 0.32
+

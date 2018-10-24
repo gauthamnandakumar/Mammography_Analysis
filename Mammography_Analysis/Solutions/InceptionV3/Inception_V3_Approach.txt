@@ -1,0 +1,30 @@
+Image Classifier - using Inception V3 Architecture
+
+The Dataset of 116 images was split as 96 for training and 20 for validation. 
+After testing the images on classifier built using 3 different backbone architectures- 
+      1. Vgg16 
+      2. Inception V3
+      3. Resnet50 
+InceptionV3 was the choice of base architecture based on the Validation accuracy obtained. 
+
+Model : The Inception V3 model was imported with all the top layers(FC) excluded. 
+        The following layers were added on to convolutional layers of the inception V3 model. 
+		1. Global Average Pooling Layer 
+		2. Fully connected layer with 512 neurons
+		3. Relu activation layer 
+		4. Dropout Layer 
+		5. Output layer with a sigmoid function
+	The optimizer used was Adam and the loss was binary cross entropy. 
+
+Result : The model was trained for 50 epochs with training accuracy at 89%.
+	 The Validation accuracy over the epochs stagnanted between 0.5 and 0.65
+	 
+The low validation accuracy can be attributed to less number of images for classification of images (B and M) which are very similar. 
+
+   
+
+ 
+ 
+
+
+
